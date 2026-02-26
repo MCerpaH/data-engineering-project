@@ -1,0 +1,27 @@
+# Python
+__pycache__/
+*.pyc
+venv/
+.env
+
+# Airflow
+logs/
+airflow.db
+
+# dbt
+target/
+dbt_packages/
+
+# Spark
+spark-warehouse/
+metastore_db/
+
+# Data
+data/
+output/
+
+# OS
+.DS_Store
+
+# Docker
+*.log
