@@ -1,6 +1,14 @@
 version: '3'
 
 services:
+  spark-pipeline:
+    build: ./docker
+    container_name: spark_pipeline
+    volumes:
+      - .:/app
+    env_file:
+      - .env
+      
   postgres:
     image: postgres:13
     environment:
