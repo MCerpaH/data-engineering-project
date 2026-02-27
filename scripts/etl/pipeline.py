@@ -6,6 +6,7 @@ from scripts.etl.transform import transform_data
 from scripts.etl.load import load_data
 
 from config.logging_config import setup_logger
+from config.config import INPUT_PATH, OUTPUT_PATH
 
 # =========================================
 # CONFIGURACIÓN
@@ -13,8 +14,6 @@ from config.logging_config import setup_logger
 
 logger = setup_logger()
 
-INPUT_PATH = os.getenv("INPUT_PATH", "data/raw/data.csv")
-OUTPUT_PATH = os.getenv("OUTPUT_PATH", "data/processed/")
 
 EXPECTED_SCHEMA = {
     "id": "int",
